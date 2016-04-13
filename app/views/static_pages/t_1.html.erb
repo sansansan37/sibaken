@@ -1,0 +1,139 @@
+<div id="mobile_main">
+
+
+<!-- ヘッダー -->
+
+<div class="header" border="0">
+<img src="/assets/hname.jpg" alt="" title="" width="100%">
+</div>
+
+
+<div id="main_contents"> 
+    <div style="margin-top:10px;"></div>
+    
+
+
+
+
+
+<div style="margin-bottom:15px;"></div>
+    
+<div class="typenaka">
+<img src="/assets/type.jpg" alt="" title="" width="60%">
+
+<div class="typenaka1">
+<p>あなたは三つ指をついて家人の帰りを待つ（家人を立てる）控えめで思いやりのある女性。
+家人の留守中も家を守るような芯がしっかりしたところも合わせ持っています。
+</p>
+</div>
+</div>
+    
+
+<div class="zenkaitype">
+
+<div class="pppsent">100%達成！</div>
+<div id="demo"></div>
+
+
+<div id="jqmeter-container"></div>
+
+
+<div class="clear"></div>
+<div style="margin-bottom:20px;"></div>
+</div>
+
+
+
+<div class="clear"></div>
+<div class="bunsho1">自分のＴＹＰＥを記録する</div>
+<div style="margin-bottom:2px;"></div>
+
+<div class="zenkaitype">
+
+
+<div class="inrighttype">
+  
+ <div  class=""  style="width:52%" > 
+  <%= form_for :user do |f| %>
+<%= f.text_field :name %></div>
+
+<%= f.submit '記録', class: 'btn-primary' %>
+
+<% end %></div>
+</div>
+
+<div class="clear"></div>
+<div class="zenkaitype">
+
+
+
+
+<div class="clear"></div>
+<div style="margin-bottom:15px;"></div>
+
+  <div class="topnimodoru"><a href="index.html">診断ＴＯＰに戻る</a></div>
+        
+
+<!-- スマホメニューボタン （サブナビ）ここまで-->
+<div style="margin-bottom:10px;"></div>
+
+
+<div class="clear"></div>
+
+
+<div class="clear"></div>
+<div style="margin-bottom:30px;"></div>
+
+
+
+</div>
+<!-- main_contents -->
+ 
+<!-- フッター部分 -->
+
+  
+  </div><div class="copy">
+    COPYRIGHT (C) SHIBAKENTYPE Co.Ltd</div>
+<!-- /フッター部分 -->
+<!-- main_contents -->
+
+</div><!-- mobile_main -->
+</div>
+<%#= User.all %>
+<%= User.all.each do |x| %>
+<%= x.id %>
+<%= x.name %>
+<%= x.s_type %>
+<% end %>
+<% session[:s_type]="t_1" %>
+現在のタイプは<%= session[:s_type] %>です。
+<% if params[:user] then %>
+名前は<%= params[:user][:name] %>です。
+<% user = User.new(name: params[:user][:name], s_type: session[:s_type]) %>
+<% if User.exists?(name: user.name) then %>
+<% update_user = User.find_by(name:user.name) %>
+<% update_user.update(s_type:session[:s_type]) %>
+    ユーザーは既に登録済みです。
+  <% else %>
+    <% if user.name.empty? then %>
+      <font color="#f00">error</font>
+    <% else %>
+     <% user.save %>
+    <% end %>
+  <% end %>
+<%# User.new(name:"test", s_type:"t_1") %>
+<% end %>
+<%= debug(params) %>
+
+
+
+<script>
+$(document).ready(function(){
+  $("#demo").progressBar({
+    percent: 100,
+    split: 0,
+    width: "100%",
+    height: "30px"
+  });
+});
+</script>

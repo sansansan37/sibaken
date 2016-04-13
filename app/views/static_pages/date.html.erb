@@ -1,0 +1,76 @@
+
+
+<div id="mobile_main">
+
+
+
+<div id="main_contents"> 
+
+    
+
+  <!--<%= form_for :ref do |f| %>
+ <%= f.text_field :body %> <%= f.submit :result %>
+  <% end %><div class="inrighttype "><a href="<%= session[:s_type] %>.html">前回のTYPE</a></div>
+
+<%= debug(params) %>
+
+<%= users = User.all %>-->
+
+
+<% array = Array[ "s_type", "name" ] %>
+<% array.each{|var| %>
+<%= var %>
+<% } %>
+
+
+<table class="out">
+<th>s_type</th><th>name</th>
+<% users.each do |x| %>
+
+    
+<tr>
+  <td><%= x.s_type %></td> 
+ <td><%= x.name %></td>   
+ 
+</tr>
+
+<% end %>
+</table>
+<!--<%= users.each do |x| %>
+
+<%= x %>
+<% end %>-->
+
+
+
+
+
+
+
+
+<div class="clear"></div>
+<div style="margin-bottom:15px;"></div>
+<%= users = User.all %>
+
+
+<div style="margin-bottom:10px;"></div>
+
+
+<div class="clear"></div>
+
+<div style="margin-bottom:20px;"></div>
+
+
+
+</div>
+<!-- main_contents -->
+
+
+<!-- フッター部分 -->
+
+<!-- /フッター部分 -->
+<!-- main_contents -->
+
+</div><!-- mobile_main -->
+
+

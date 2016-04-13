@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>柴犬タイプ診断書</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %><meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+<!-- スマホ振り分け -->
+
+<!--<script type="text/javascript" src="js/smartphone.js"></script>-->
+
+
+<!-- スマートフォンで表示サイズを画面に合わせる -->
+<meta name="viewport"
+	content="width=320,
+		height=480,
+		initial-scale=1.0,
+		minimum-scale=1.0,
+		maximum-scale=2.0,
+		user-scalable=yes" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/1.11.4.jquery.min.js"></script>
+<script type="text/javascript" src="js/tinytools.progressbar.js"></script>
+</head>
+
+
+<body>
+
+<%= yield %>
+
+</body>
+</html>

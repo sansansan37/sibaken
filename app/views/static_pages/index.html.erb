@@ -1,0 +1,82 @@
+
+
+<div id="mobile_main">
+
+
+
+<div id="main_contents"> 
+    <div style="margin-top:10px;"></div>
+    
+
+
+<div style="margin-bottom:15px;"></div>
+    
+<img src="/assets/maingazou.jpg" width="100%" height="" alt="" class="mb10"/>
+
+<div style="margin-bottom:20px;"></div>
+
+
+<div class="sindankaisi"><a href="q1.html">TYPEを診断する</a></div>
+
+<div class="clear"></div>
+<div class="bunsho1">前回登録したＴＹＰＥを表示します</div>
+<div style="margin-bottom:2px;"></div>
+
+<div class="zenkaitype">
+
+<!--<input type="text" name="typehyouzi"  style="width:52%" class="inleft"/> -->
+
+ <% if @username.blank? then %>
+       <font color="#f00">ユーザー名が入力されてません</font>
+       
+<% elsif @user.blank? then %>
+       登録がありません
+       
+       
+       
+    <% end %>
+  <%= form_for :ref do |f| %>
+ <%= f.text_field :body %> <%= f.submit :result %>
+  <% end %><!--<div class="inrighttype "><a href="<%= session[:s_type] %>.html">前回のTYPE</a></div>-->
+</div>
+<%= debug(params) %>
+
+<div class="clear"></div>
+<div style="margin-bottom:15px;"></div>
+
+
+
+<!-- スマホメニューボタン （サブナビ）ここまで-->
+<div style="margin-bottom:10px;"></div>
+
+
+<div class="clear"></div>
+
+
+<div class="clear"></div>
+<div style="margin-bottom:20px;"></div>
+
+
+
+</div>
+<!-- main_contents -->
+
+
+<!-- フッター部分 -->
+
+    
+  <div class="copy">
+    COPYRIGHT (C) SHIBAKENTYPE Co.Ltd</div>
+  </div>
+<!-- /フッター部分 -->
+<!-- main_contents -->
+
+</div><!-- mobile_main -->
+</div>
+
+
+
+
+ 
+  
+
