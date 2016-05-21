@@ -1,9 +1,19 @@
-# Herokuに合わせて変更が必要
-# 本番(production)環境のみ
-production:
+default: &default
   adapter: postgresql
-  encoding: utf8
-  database: your_database
-  port: 5432
-  username: your_username
-  password: your_password
+  encoding: SQL_ASCII
+  pool: 5
+  username: ubuntu
+  password: password
+
+development:
+  <<: *default
+  database: hellowolrd_development
+
+test:
+  <<: *default
+  database: hellowolrd_test
+
+production:
+  <<: *default
+  encoding: unicode
+  database: hellowolrd
