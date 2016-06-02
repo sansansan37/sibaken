@@ -1,8 +1,8 @@
 Sakuhin::Application.routes.draw do
 
-  get "static_pages/index"
+#  get "static_pages/index"
   post "static_pages/index"
-  root 'static_pages/index'
+  root 'static_pages#index'
   get "static_pages/date"
   post "static_pages/date"
   get "static_pages/q1"
