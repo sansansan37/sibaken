@@ -12,7 +12,7 @@ gem 'rails_12factor', group: :production
 gem 'puma'
 ### H.saito Add <<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-
+gem 'rails_12factor', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
