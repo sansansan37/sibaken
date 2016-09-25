@@ -48,11 +48,11 @@
 
 <div class="inrighttype">
   
- <div  class=""  style="width:52%" > 
+ <div  class=""  style="width:100%" > 
   <%= form_for :user do |f| %>
-<%= f.text_field :name %></div>
+<%= f.text_field :name %><%= f.submit '記録', class: 'btn-primary' %></div>
 
-<%= f.submit '記録', class: 'btn-primary' %>
+
 
 <% end %></div>
 </div>
