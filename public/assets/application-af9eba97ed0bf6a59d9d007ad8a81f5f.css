@@ -1,0 +1,911 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+/*全体*/
+
+
+body{
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:12px;
+	color:#333;
+	line-height:1.4;
+	margin:0;
+	padding:0;
+	/*background:url(../img/top/btn.png) no-repeat left center;*/
+	background-color:#E7F6F7;
+	border-collapse:collapse;
+}
+a{
+	text-decoration:none;
+	color:#333;
+}
+span{
+	color:#666;
+}
+
+
+/*画像を横幅に合わせて表示*/
+p.resizeimage img { width: 100%; }
+
+
+
+#mobile_main{
+	width:100%;
+	margin:0 auto;
+	padding:0;
+/*	text-align:center;*/
+/*border:1px solid #333;*/
+}
+#header{
+	width:100%;
+	margin-bottom:10px;
+}
+#tel{
+/*	width:210px;*/
+	text-align:center;
+	border:1px solid #ababab;
+}
+#tel img{
+/*	width:100%;*/
+}
+
+#main_contents{
+/*	width:94%;*/
+	padding:0 10px;
+/*background-color:#0FF;*/
+}
+#sen{
+	border-bottom:1px solid #ababab;
+	height:1px;
+	width:100%;
+}
+
+.clglg {
+	color:#A68C2D;
+	font-weight:bold;
+	text-align:center;
+	font-size:14px;
+}
+.clglg2 {
+	color:#A68C2D;
+	font-size:12px;
+}
+.clglg3 {
+	color:#7C500A;
+	font-size:13px;
+}
+.clble {
+	color:#6e8bdd;
+	font-weight:bold;
+	text-align:left;
+	font-size:13px;
+}
+.wakubrown {
+	border: 1px solid #A68C2D;
+	padding:5px;
+}
+.mds {
+	background-color:#CAA534;
+	height:26px;
+	color:#FFF;
+	font-size:14px;
+	font-weight:bold;
+	padding:8px 0 0 10px;
+}
+.mdsbgbl {
+	background-color:#6e8bdd;
+	height:20px;
+	color:#FFF;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.mds2 {
+	background-color:#cccccc;
+	height:28px;
+	color:#FFF;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 0 0 10px;
+}
+.mds3 {
+	background-color:#cccccc;
+	height:20px;
+	color:#666;
+	font-size:13px;
+	font-weight:bold;
+	padding:2px 0 0 4px;
+}
+.mdsglay {
+	color:#333;
+	font-size:12px;
+	font-weight:nomal;
+	line-height:20px;
+}
+#komoku{
+	width:100%;
+	border-bottom:1px dashed #ababab;
+}
+#komoku td{
+	padding:10px;
+}
+#komoku2{
+	width:100%;
+}
+#komoku2 td{
+	padding:10px;
+}
+.btn01 {
+	font-size:12px;
+	color:#666;
+}
+#link_tb{
+	width:100%;
+	margin-top:30px;
+}
+#link_tb td{
+	padding:0;
+	width:50%;
+}
+#link_tb img{
+	width:100%;
+}
+
+
+
+
+
+
+#footer{
+	background:#f1f1f1;
+	margin-top:10px;
+	margin-bottom:0;
+	position:relative;
+}
+#footer img.btn{
+	position:absolute;
+	bottom:10px;
+	right:10px;
+}
+.footer_menu{
+	padding-top:10px;
+	padding-left:10px;
+	padding-bottom:20px;
+	list-style:none;
+}
+.footer_menu li{
+	background:url(../img/top/btn.png) no-repeat left center;
+	padding-left:18px;
+	margin-bottom:10px;
+/*	background:#FFC;*/
+}
+.footer_menu a{
+	color:#333;
+}
+.copy{
+	background: #1DC6ED;
+    color: #fff;
+    font-size: 6px;
+    text-align: center;
+    padding: 3px 0;
+   position: fixed;
+    bottom: 0;
+    width: 100%; 
+}
+
+/* 申込フォーム
+---------------------------------*/
+.form_note{
+	margin:0 auto;
+	margin-top:10px;
+}
+.form_tb{
+	
+	margin-left:1%;
+	border-collapse:collapse;
+	margin-top:10px;
+	margin-bottom:10px;
+	width: 99%;
+	
+}
+.form_tb th{
+	background:#f0f0f0;
+	font-weight:normal;
+	text-align:left;
+	padding:10px;
+	border:1px solid #ccc;
+}
+.form_tb td{
+	padding:10px;
+	vertical-align:middle;
+	border:1px solid #ccc;
+}
+.form_tb input{
+	border:1px solid #ccc;
+	width:98%;
+}
+.form_tb textarea{
+	border:1px solid #ccc;
+	width:98%;
+}
+#entry_ck{
+	border:none;
+	width:15px;
+}
+.ime_disabled{
+	ime-mode: disabled;
+}
+.form_kome{
+	color:#C00;
+}
+.err_mess{
+	padding-left:0px;
+	padding-right:10px;
+	margin-bottom:10px;
+	color:#c00;
+}
+.send_mess{
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:20px; 
+	margin-bottom:20px;
+}
+.underlinebwn {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #963;
+	color: #963;
+	font-weight: bold;
+	font-size: 14px;
+}
+.wakubrown p {
+	margin:0;
+	text-align:left;
+}
+hr {
+	border:none;border-top:dashed 1px #cccccc;height:1px;color:#FFFFFF;
+
+}
+.voicebg {
+	background-color: #F4F7CE;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+.voicebg p {
+	padding: 5px;
+	margin:0 auto;
+}
+.btntop4 #komoku2 tr td p {
+	margin:0 auto;
+	vertical-align:middle;
+}
+
+.cntr {
+	text-align:center;
+	margin:0 auto;
+}
+.mrt ul {
+	list-style-position:outside;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+
+
+.index_news dt{	
+
+	color: #4048b2;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+.index_news dd{
+	margin-bottom:5px;
+}
+
+
+
+aside.banner {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+
+	
+}
+aside.banner ul {
+	margin: 0;
+	padding: 0;
+	background: #FFF;
+	width: 100%;
+}
+aside.banner ul li {
+	width: 50%;
+	display: inline-block;
+	float: left;
+	vertical-align: bottom;
+}
+aside.banner ul li img {
+	vertical-align: bottom;
+}
+
+
+
+
+
+.btnnabi1 {display: inline-block;
+font-size: 14px;
+font-weight: bold;
+color:#333;;
+  font-weight: bold;
+    text-align: left;
+/*text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4), 0 1px 1px rgba(255, 255, 255, 0.5);*/
+letter-spacing: 1;
+border:1px;
+
+
+
+text-decoration: none;
+text-align:left;
+padding-left:5px;
+margin:5px;
+
+
+  border-bottom-width:solid;
+  border-bottom-color: #bbbbbb;
+  
+
+  border-top-width:solid;
+  border-top-color: #bbbbbb;
+  
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: #bbbbbb;
+}
+
+
+.moziside{
+	  font-weight: bold;
+    text-align: left;
+	font-size:14px;
+	color:#333;
+	
+	
+	 border-bottom-width:solid;
+  border-bottom-color: #bbbbbb;
+  
+
+  border-top-width:solid;
+  border-top-color: #bbbbbb;
+}
+.kasen{
+	  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #A3A3A3;
+  width:100%;
+}
+
+
+
+
+/* リンク部分
+---------------------------------*/
+.link_section{
+	width:100%;
+	padding-top:10px;
+	padding-bottom:px;
+	/*border-top:1px solid #ccc;*/
+	/*border-bottom:1px solid #ccc;*/
+	position:relative;
+	margin-top:10px;
+	margin-bottom:px;
+}
+.link_section div{
+	width:48%;
+	float:left;
+	margin-bottom:5px;
+}
+.link_section div.right{
+	position:absolute;
+	right:0;
+}
+
+
+.link_section div.right1{
+	position:absolute;
+	right:0;
+	font-size:80%;
+}
+.link_section br{
+	clear:left;
+}
+.link_section a{
+	display:block;
+	color:#fff;
+	color:#000000;
+	text-decoration:none;
+	border:1px solid #C30D23;
+	border:1px solid #dddddd;
+	padding:10px;
+	text-align:center;
+	border-radius: 5px;/*角丸*/
+	background:#111;
+	background:#212121;
+	background:#C30D23;
+	background:#cccccc;
+
+
+}
+
+
+h2 {
+  padding: 0;
+  margin: 10px 0 10px 0;
+  padding-left: 5px;
+  font-size: 110%;
+  border-left: 3px solid #C30D23;
+  border-bottom: 1px solid #C30D23;
+  font-weight:bold;
+  color:#161616;
+}
+.center{
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+
+#container {
+		margin: 0 auto;
+	width: 100%;
+	text-align: center;
+
+}
+
+/* .viewer
+------------------------- */
+.viewer {
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+
+}
+.viewer ul {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.viewer ul li {
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+}
+.viewer ul li img {
+	width: 100%;
+}
+
+/* sideNavi
+------------------------- */
+.viewer .btnPrev,
+.viewer .btnNext {
+	margin-top: -25px;
+	top: 50%;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	z-index: 101;
+}
+.viewer .btnPrev {
+	left: 10px;
+	background: #ccc url(../img/btnPrev.jpg) no-repeat center center;
+}
+.viewer .btnNext {
+	right: 10px;
+	background: #ccc url(../img/btnNext.jpg) no-repeat center center;
+}
+
+.sindankaisi a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    background-color: #1DC6ED;
+    border: solid 4px #3AB5E4;
+    padding: 12px;
+    font-size: 17px;
+	margin-bottom:10px;
+	font-weight:600;
+	letter-spacing:1.1px;
+	clear:both;
+}
+
+.sindankaisi a:hover{
+    display: block;
+    color: #3AB5E4;
+    text-align: center;
+    background-color: #EFFAFD;
+    border: solid 4px #1DC6ED;
+    padding: 12px;
+    font-size: 17px;
+	margin-bottom:10px;
+	font-weight:bold;
+	letter-spacing:1.1px;
+	clear:both;
+	
+}
+
+.inleft{
+	float:left;
+	width:42%;
+	padding-top:12px;
+	padding-bottom:12px;
+}
+
+
+
+.inrighttype a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    background-color: #1DC6ED;
+    padding: 10px;
+    font-size: 12.3px;
+	font-weight:600;
+	letter-spacing:0.9px;
+	float:right;
+	width:33%;
+	border: solid 4px #3AB5E4;
+
+}
+
+.inrighttype a:hover{
+    display: block;
+    color: #fff;
+    text-align: center;
+    background-color: #1DC6ED;
+    padding: 10px;
+    font-size: 12.3px;
+	font-weight:600;
+	letter-spacing:0.9px;
+	float:right;
+	width:33%;
+	border: solid 4px #3AB5E4;
+		opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+
+}
+
+
+.qbunsho {
+    display: block;
+    color: #333333;
+    text-align: center;
+    background-color: #ffffff;
+    border: solid 5px #1DC6ED;
+    padding: 12px;
+    font-size: 15px;
+	margin-bottom:10px;
+	font-weight:600;
+	letter-spacing:0.4px;
+	clear:both;
+}
+
+.qbunsho p{
+	text-align:center;
+}
+
+.bunsho1{
+    color: #333333;
+	font-size:12.8px;
+    font-weight:600;
+	letter-spacing:0.4px;
+	padding:0px;
+}
+
+.topnimodoru a{
+	
+	 display: block;
+    color: #1DC6ED;
+    text-align: center;
+    background-color: #ffffff;
+    border: solid 4px #1DC6ED;
+    padding: 12px;
+    font-size: 13px;
+	margin-bottom:10px;
+	font-weight:400;
+	letter-spacing:1.1px;
+	clear:both;
+}
+
+.topnimodoru a:hover{
+	
+	display: block;
+    color: #1DC6ED;
+    text-align: center;
+    background-color: #EAEDEF;
+    border: solid 4px #1DC6ED;
+    padding: 12px;
+    font-size: 13px;
+	margin-bottom:10px;
+	font-weight:400;
+	letter-spacing:1.1px;
+	clear:both;
+}
+
+.ddd{
+	width:100%
+}
+.setumon1 a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    background-color: #1DC6ED;
+    padding: 10px;
+    font-size: 12.3px;
+	font-weight:600;
+	letter-spacing:0.9px;
+	float:left;
+	width:88%;
+}
+
+.setumon1 a:hover{
+    display: block;
+    color: #fff;
+    text-align: center;
+    background-color: #1DC6ED;
+    padding: 10px;
+    font-size: 12.3px;
+	font-weight:600;
+	letter-spacing:0.9px;
+	float:left;
+	width:88%;
+	opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+}
+
+.setumon2 a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    background-color: #1DC6ED;
+    padding: 10px;
+    font-size: 12.3px;
+	font-weight:600;
+	letter-spacing:0.9px;
+	float:right;
+	width:88%;	
+}
+.setumon2 a:hover{
+    display: block;
+    color: #fff;
+    text-align: center;
+    background-color: #1DC6ED;
+    padding: 10px;
+    font-size: 12.3px;
+	font-weight:600;
+	letter-spacing:0.9px;
+	float:right;
+	width:88%;
+	opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+}
+
+
+.typenaka {
+    display: block;
+    color: #333333;
+    text-align: center;
+    background-color: #ffffff;
+    border: solid 5px #1DC6ED;
+    padding: 12px;
+    font-size: 14px;
+	margin-bottom:10px;
+	letter-spacing:0.4px;
+	clear:both;
+}
+.typenaka1{
+		text-align:left;
+	width:100%;
+	
+}
+.typenaka p{
+
+width:100%;
+line-height:18px;
+	
+}
+
+.typenaka img{
+	text-align:center;
+	padding-top:5px;
+	
+}
+
+#demo{
+	display: block;
+    color: #1DC6ED;
+    text-align: center;
+    background-color: #ffffff;
+    border: solid 2px #A5A5A5;
+	border-radius: 0px;
+ 
+}
+
+
+.ProgressBar {
+	font-size: 10px;
+	font-weight: bold;
+	padding: 0;
+	background-color: #fff;
+	border-radius: 3px;
+	overflow: hidden;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	position: relative;
+	min-height: 1px;
+	border: 1px solid #999;
+}
+
+	.ProgressBar .Bar {
+		width: 0;
+		border-radius: 0px;
+		overflow: hidden;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		position: absolute;
+		-moz-transition: width .5s;
+		-o-transition: width .5s;
+		-webkit-transition: width .5s;
+		transition: width .5s;
+
+		background:#1DC6ED;
+	}
+
+	.ProgressBar canvas {
+		position: absolute;
+		margin: 0;
+		top: 0;
+		left: 0;
+	}
+
+	.ProgressBar p {
+		position: absolute;
+		margin: 0;
+		padding: 0 10px;
+		top: 0;
+		left: 0;
+		font-size: 10px;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+		.ProgressBar p.BackProgressBarPercent {
+			color: #777;
+		}
+
+		.ProgressBar p.ForeProgressBarPercent {
+			color: #eee;
+		}
+
+.pppsent{
+	font-size:16px;
+	text-align:center;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+.clear{
+    clear:both;
+
+}
+
+
+submit{
+	    display: block;
+    color: #fff;
+    text-align: center;
+    background-color: #1DC6ED;
+    padding: 10px;
+    font-size: 12.3px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    float: right;
+    width: 33%;
+    border: solid 4px #3AB5E4;
+}
+
+input#submit
+    {
+	 display: block;
+    color: #fff;
+    text-align: center;
+    background-color: #1DC6ED;
+    padding: 10px;
+    font-size: 12.3px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    float: right;
+    width: 33%;
+    border: solid 4px #3AB5E4;
+}
+
+
+.btn-primary
+    {
+	display: block;
+    color: #fff;
+    text-align: center;
+    background-color: #1DC6ED;
+    padding: 10px;
+    font-size: 12.3px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    float: right;
+    width: 33%;
+    border: solid 4px #3AB5E4;
+}
+
+#user_name{
+	padding-top: 12px;
+    padding-bottom: 9px;
+    float:left;
+}
+
+
+table.out{
+	width: 730px;
+	border-top:1px solid #999999;
+    border-left:1px solid #999999;
+    border-collapse:collapse;
+    border-spacing:0;
+    background-color:#ffffff;
+    empty-cells:show;
+	font-size:14px;
+	color:#333;
+}
+.out th{
+	border-right:1px solid #999999;
+    border-bottom:1px solid #999999;
+    color:#000000;
+    background-color:#e6e6e6;
+    padding:5px 10px;
+		font-size:14px;
+	font-weight:normal;
+	line-height: 140%;
+    text-align:left;
+	empty-cells:show;
+}
+.out td{
+	border-right:1px solid #999999;
+    border-bottom:1px solid #999999;
+    padding:5px 10px;
+		font-size:14.5px;
+	text-align:left;
+	empty-cells:show;
+}
